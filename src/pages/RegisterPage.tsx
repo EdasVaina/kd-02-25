@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 import { NavLink } from "react-router";
 
-export default function LoginPage() {
+export default function RegisterPage() {
   const [email, setEmail] = useState<string>("")
   const [password, setPassword] = useState<string>("")
   const [remember, setRemember] = useState<boolean>(false)
@@ -23,9 +23,9 @@ export default function LoginPage() {
       <NavLink to={"/"}>Home</NavLink>
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle className="text-2xl">HeadphoneHub Login</CardTitle>
+          <CardTitle className="text-2xl">HeadphoneHub Registration</CardTitle>
           <CardDescription>
-            Login to access your account and shop premium headphones
+            Register to create your account and shop premium headphones
           </CardDescription>
         </CardHeader>
 
@@ -67,26 +67,12 @@ export default function LoginPage() {
                 />
                 <Label>Remember me</Label>
               </div>
-
-              <button
-                type="button"
-                className="text-sm text-primary underline"
-              >
-                Forgot password?
-              </button>
             </div>
 
             <Button type="submit" className="w-full">
-              Login
+              Register
             </Button>
           </form>
-
-          <p className="text-sm text-center mt-4 text-muted-foreground">
-            Don’t have an account?{" "}
-            <span className="text-primary cursor-pointer underline">
-              Sign up
-            </span>
-          </p>
         </CardContent>
       </Card>
     </div>

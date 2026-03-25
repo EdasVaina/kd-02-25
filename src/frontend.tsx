@@ -10,6 +10,7 @@ import { createRoot } from "react-dom/client";
 import { App } from "./App";
 import { BrowserRouter, Route, Routes } from "react-router";
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 const elem = document.getElementById("root")!;
 const app = (
@@ -18,6 +19,7 @@ const app = (
       <Routes>
         <Route path="/" element={<App/>}></Route>
         <Route path="/login" element={<LoginPage/>}></Route>
+        <Route path="/Register" element={<RegisterPage/>}></Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>
